@@ -1,0 +1,63 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor FAQs</title>
+</head>
+<body>
+    <style>
+        body{
+            background: linear-gradient(to bottom, #301534 50%, #f8f9fa 50%);
+            font-family: Arial, sans-serif;
+            padding: 50px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .faq-container {
+            max-width: 600px;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+        .faq-item {
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+        }
+
+
+            
+        
+    </style>
+    <div class="faq-container">
+        <h2>Frontend Mentor FAQs</h2>
+        <div class="faq-item">
+            <p class="faq-question">What is Frontend Mentor?</p>
+            <p class="faq-answer">Frontend Mentor provides real-world coding challenges to help developers practice frontend skills.</p>
+        </div>
+        <div class="faq-item">
+            <p class="faq-question">How does Frontend Mentor work?</p>
+            <p class="faq-answer">Choose a challenge, build a solution, and submit it for feedback.</p>
+        </div>
+        <div class="faq-item">
+            <p class="faq-question">Do I need JavaScript for the challenges?</p>
+            <p class="faq-answer">Not all challenges require JavaScript; many can be completed using just HTML and CSS.</p>
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', () => {
+                const answer = item.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>
+
+</body>
+</html>
